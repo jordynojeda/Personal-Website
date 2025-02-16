@@ -1,7 +1,7 @@
-baseURL: "https://example.org/"
+baseURL: ""
 languageCode: "en-us"
 title: "Personal Website"
-theme: hugo-profile
+theme: personal-website-theme
 
 outputs:
   home:
@@ -265,7 +265,7 @@ params:
           - Created the **Crash Dump Application**, which automates the process of uploading stack trace files to Trane's cloud network via POST requests, enhancing system monitoring and troubleshooting.  
 
       - job: "Graduate Research Assistant"
-        company: "University Of Minnesota Twin Cities"
+        company: "University Of Minnesota -  Twin Cities"
         companyUrl: "https://twin-cities.umn.edu/"
         date: "Jan 2020 - Aug 2020"
         info:
