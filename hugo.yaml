@@ -1,0 +1,454 @@
+baseURL: "https://example.org/"
+languageCode: "en-us"
+title: "Personal Website"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  # main:
+  #   - identifier: blog
+  #     name: Blog
+  #     title: Blog posts
+  #     url: /blogs
+  #     weight: 1
+  #   - identifier: gallery
+  #     name: Gallery
+  #     title: Blog posts
+  #     url: /gallery
+  #     weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Personal Website"
+  description: Jordyn Ojeda - Personal Website
+  # staticPath: ""  # The path to serve the static files from
+  # favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#007bff"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#007bff"
+    secondaryColor: "#f8f9fa"
+
+    darkmode:
+      textColor: "#e4e6eb"
+      secondaryTextColor: "#b0b3b8"
+      textLinkColor: "#ffffff"
+      backgroundColor: "#18191a"
+      secondaryBackgroundColor: "#212529"
+      primaryColor: "#ffffff"
+      secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Personal Website" # Brand name for the brand | default is the title variable
+    disableSearch: True
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disablePublications: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Jordyn Ojeda"
+    subtitle: "Data Scientist"
+    content: "I'm Jordyn Ojeda, a Data Scientist with a strong software engineering background and a deep passion for artificial intelligence, machine learning, data science, and innovative problem-solving. I'm always eager to learn and constantly expanding my knowledge to stay at the forefront of technology. Beyond my love for tech, I enjoy experimenting in the kitchen, staying active with weight lifting, and finding balance through golf and snowboarding."
+    image: /images/website-headshot.JPG
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: false
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/jordynojeda
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/jordyn-ojeda-3834051a2/
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/website_photo.jpeg"
+    content: |-
+      I hold both a Bachelor's and a Master's degree in Computer Science from the University of Minnesota, with a focus on AI/ML and Software Engineering during my graduate studies. As part of my master's program, I worked as a research assistant in a computational neuroscience lab, where I developed machine learning models that laid the groundwork for my thesis project. 
+      
+      Currently, I’m a Data Scientist at Polaris, where I focus on feature engineering, developing ML models, and working with generative AI applications. In addition, I continue to collaborate with my research lab on an exciting project in partnership with MedARC.
+      
+      What sets me apart is my strong communication, leadership, and mentorship skills. During my internship at Trane Technologies, I had the opportunity to lead and mentor software engineering interns, honing my ability to guide teams and drive results. I’m also an active member of Toastmasters at Polaris, where I continually refine my public speaking and communication skills, an essential part of effectively conveying complex ideas and leading teams.
+    
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Programming Languages: Python | C/C++ | SQL | C# | Javascript | Typescript | HTML | CSS "
+        - "Libraries: Pytorch | Numpy | Streamlit | OpenCV | LangChain | LangFlow"
+        - "Development Environment: Linux | Eclipse | VS | VS Code"
+        - "Platforms: Github | Azure | Snowflake | Databricks | DataRobot | Azure AI Foundry"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      
+      - job: "Various Roles"
+        company: "Polaris"
+        companyUrl: "https://www.polaris.com/"
+        date: ""
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          name: "View the projects"
+          url: "https://example.com"
+        content: |
+          <br>
+
+          #### Data Scientist - Ride Command Data Team   
+          *Jan 2025 - Present · 2 mos*  
+          *Medina, Minnesota, United States* 
+
+          - Designed and implemented features for connected vehicle analytics, processing real-time IoT event data, including VIN-level attributes (mileage, engine hours, software version, etc), engine speed, wheel speed, temperature-related metrics, and usage patterns.
+          - Developed and optimized Snowflake-based feature stores, structuring features into dimensional and fact tables to support machine learning and analytics.
+          - Built Snowflake tasks and automated feature ingestion from Kafka-streamed IoT event data, ensuring scalable and efficient data processing.
+          - Worked cross-functionally with data engineers, architects, and product teams to document data pipelines, refine data models, and drive best practices for connected vehicle data solutions.
+          
+          #### AI/ML Solution Architect - Data & Analytics Team   
+          *Jul 2024 - Present · 7 mos*  
+          *Medina, Minnesota, United States* 
+
+          - **Text-To-SQL Application**: Designed and launched a generative AI-powered marketing list application using LangChain, vector databases, and Streamlit. Led data preparation with star schemas and refined "golden" queries to optimize text-to-SQL model performance, delivering an intuitive tool that integrates seamlessly into corporate marketing workflows.  
+          - Led evaluations of platforms like DataRobot, Databricks, and Azure AI Studio, mapping capabilities to classification, forecasting, and generative AI use cases. Delivered actionable recommendations through concise executive presentations, guiding enterprise AI/ML strategy.  
+          - Streamlined Python script deployment with Docker and CI/CD workflows, standardized Streamlit app development with modular architecture, and implemented Databricks Asset Bundles to improve scalability and efficiency.  
+          - **RAG Model**: Developed a retrieval-augmented generation (RAG) application, enabling advanced text-to-document retrieval and in-line citations from vector databases. Designed a user-friendly Streamlit interface with robust features like document previews and source-linked responses, ensuring accuracy and usability for enterprise knowledge management.  
+          - Built financial reporting workflows in Databricks and achieved 120x performance gains via parallel processing and delivering actionable cost insights for enterprise resource optimization.
+
+          #### Computer Vision Scientist - Neural Network / Machine Vision Team
+          *Jan 2024 - Jul 2024 · 7 mos* <br>
+          *Plymouth, Minnesota, United States*  
+
+          - Decoupled a monolithic 1500-line file into modular components with nine classes, implemented unit tests, and introduced Doxygen for documentation, setting a software engineering standard for future projects. Worked with technologies such as YOLO, Darknet, and Darkhelp to develop features in C++ for the computer vision codebase.  
+          - Developed reusable, configuration-driven local orchestrators using a Polaris SDK for deployment across manufacturing sites. Standardized processes reduced setup time and simplified debugging for Polarisnnet V2 implementations.  
+          - Automated the validation process for Polarisnnet models, generating statistical reports and integrating Azure capabilities for video and result management. Provided scalable scripts and documentation adopted by manufacturing sites.  
+          - Created a comprehensive Confluence space to centralize documentation, define coding standards, and streamline collaboration for the Polarisnnet team, filling critical gaps and ensuring alignment with software engineering best practices.  
+          - Conducted extensive validations comparing V1 and V2 YOLO models, showcasing improved performance to Spirit Lake and other sites. Developed automated validation tools to foster trust and accelerate V2 adoption.
+
+          #### Software Engineer - E&O Team
+          *Jul 2023 - Jan 2024 · 7 mos* <br>
+          *Plymouth, Minnesota, United States*
+
+          - Transitioned two production manufacturing applications (DPIR and VIA) from Xamarin.Forms to .NET MAUI, including updating to .NET 8. Delivered the projects ahead of schedule while addressing build errors, refactoring startup logic, and integrating new features.  
+          - Enhanced functionality in production manufacturing applications using Xamarin.Forms and C# within an agile scrum environment. Added a native Windows component for improved site usability, leading the project through the architecture board, the certificate signing process, and security approval processes.  
+          - Created a comprehensive Confluence space to centralize team documentation, address gaps, and establish coding standards. Advocated for the inclusion of unit tests in all repositories, setting a precedent for quality in each sprint.  
+          - Worked with architecture, security, and platform teams to streamline deployment pipelines and processes, ensuring seamless integration of applications across environments.
+
+
+
+      - job: "Various Internships"
+        company: "Trane Technologies"
+        companyUrl: "https://www.tranetechnologies.com/en/index.html"
+        date: ""
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          <br> 
+
+          #### Software Development Intern - SC+ Team
+          *May 2022 - Aug 2022 · 4 mos*  
+          *White Bear Lake, Minnesota, United States*
+
+          - Enhanced Trane’s BACnet capture feature by implementing remote debugging capabilities, utilizing multithreading and Object-Oriented design principles to optimize technician workflows.  
+          - Refactored Linux network code by converting Python to C++ to improve performance and system compatibility.  
+          - Developed Python scripts to automate ZAP security tests, improving testing efficiency and vulnerability detection.  
+          - Integrated BACnet capture functionality into Trane’s unit controllers by modifying the shared code base and managing CMake dependencies.  
+          - Resolved security vulnerabilities using Coverity to ensure code quality and system security.  
+          - Led and mentored fellow software engineering interns, providing guidance on project execution and setup.  
+
+          #### Software Engineer Intern - SC+ Team
+          *May 2021 - Aug 2021 · 4 mos* <br>
+          *White Bear Lake, Minnesota, United States*  
+
+          - Developed two production-level applications for the Trane SC+ system controllers, utilizing full-stack development in C++ and JavaScript.  
+          - Designed and implemented the **Time Service Application**, which validates and updates the time on outdated system controllers using a custom TLS handshake (set for production in 2022).  
+          - Created the **Crash Dump Application**, which automates the process of uploading stack trace files to Trane's cloud network via POST requests, enhancing system monitoring and troubleshooting.  
+
+      - job: "Graduate Research Assistant"
+        company: "University Of Minnesota Twin Cities"
+        companyUrl: "https://twin-cities.umn.edu/"
+        date: "Jan 2020 - Aug 2020"
+        info:
+          enable: false
+        featuredLink:
+          enable: true
+          url: "https://www.naselarislab.net/"
+        content: |
+          Worked in the **Computational Neuroscience Lab** under **Dr. Thomas Naselaris** on the **Second Sight** project, which focuses on building machine learning models to decode fMRI brain activity and reconstruct images seen by subjects in a scanner. Developed and trained deep learning models using **PyTorch** on **NVIDIA A100 GPUs** to recover semantic information and improve image reconstruction from brain activity.
+
+          #### Research Focus
+          - Applied advanced deep learning techniques to optimize image reconstructions from brain data using **brain-optimized encoding models** and **guided stochastic search**.
+
+          #### Key Achievements
+          - Contributed to **three published papers** at the **Cognitive Computational Neuroscience (CCN) Conference**.
+          - Co-authored research that was **presented at Oxford University**.
+
+          #### List of Publications
+          - *Brain-Optimized Inference Improves Reconstructions of fMRI Brain Activity*
+          - *Second Sight: Using Brain-Optimized Encoding Models to Align Image Distributions with Human Brain Activity*
+          - *Reconstructing Seen Images from Human Brain Activity via Guided Stochastic Search*
+
+          This project served as the foundation for my **Master's thesis** and contributed to advancements in **brain-computer interfacing** and **visual reconstruction algorithms**.
+   
+    
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Computer Science"
+        school:
+          name: "Unversity of Minnesota - Twin Cities"
+          url: "https://twin-cities.umn.edu/?gclid=CjwKCAjwvKi4BhABEiwAH2gcw7PE_hlIN8RKE92aFmFHIK1iRiXiQIq2DMAdFCngqJnT-59gAa5V_RoCJT4QAvD_BwE&utm_source=google&utm_medium=cpc_test&utm_campaign=RSP_Systemwide_Paid-Search_Google_Brand"
+        date: "Graduated May 2023"
+        GPA: "3.95 out of 4.0"
+        content: |-
+          I Publiced three papers when I was a graduate researcg assistant.
+          - Brain-optimized inference improves reconstructions of fMRI brain activity
+          - Second Sight: Using brain-optimized encoding models to align image distributions with human brain activity
+          - Reconstructing seen images from human brain activity via guided stochastic search
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Unversity of Minnesota - Twin Cities"
+          url: "https://twin-cities.umn.edu/?gclid=CjwKCAjwvKi4BhABEiwAH2gcw7PE_hlIN8RKE92aFmFHIK1iRiXiQIq2DMAdFCngqJnT-59gAa5V_RoCJT4QAvD_BwE&utm_source=google&utm_medium=cpc_test&utm_campaign=RSP_Systemwide_Paid-Search_Google_Brand"
+        date: "Graduated May 2022"
+        GPA: "3.78 out of 4"
+        content: |-
+
+          Extracurricular Activities
+            - President Emerging Scholars
+            - Society Of Hispanic Professional Engineers
+            - Social Coding Club
+            - MinneHack 
+
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+  # Publications
+  publications:
+    enable: true
+    items:
+      - title: Brain-optimized inference improves reconstructions of fMRI brain activity
+        content: Recent advances in AI and large datasets have significantly improved image reconstruction from brain activity. We introduce a brain-optimized inference method that iteratively refines initial reconstructions using an encoding model to maximize alignment with neural activity. By sampling and selecting images that best match brain responses, our method enhances reconstruction quality beyond state-of-the-art approaches, as validated by human ratings, feature metrics, and neural alignment. Notably, refinement rates vary across visual cortex, with early visual areas converging more slowly. This approach improves reconstruction accuracy and provides insights into brain representation dynamics.
+        url: https://arxiv.org/abs/2312.07705
+        image: /images/publication_1.png
+      - title: Reconstructing seen images from human brain activity via guided stochastic search
+        content: Visual reconstruction maps brain activity to pixels, traditionally relying on brute-force search through large image libraries. We enhance this process using generative diffusion models, decoding semantic descriptors from fMRI data and iteratively refining image samples based on encoding model predictions. This guided search preserves semantic content while improving low-level details across iterations, producing high-quality reconstructions. Additionally, variation in convergence times across visual cortex suggests a novel way to study representational diversity in different brain regions.
+        url: "https://arxiv.org/abs/2305.00556v2"
+        image: /images/publication_2.png
+      - title: Second Sight - Using brain-optimized encoding models to align image distributions with human brain activity
+        content: Image reconstruction from brain activity has advanced with large datasets and powerful generative models, yet most methods aim for single best-image estimates. We propose Second Sight, an iterative refinement approach that optimizes an image distribution for alignment with brain activity. By selectively refining both semantic and low-level features, our method produces reconstructions that rival state-of-the-art techniques. Interestingly, convergence times vary across visual cortex, with early areas preferring narrower distributions. This approach offers a novel way to explore how different brain regions represent visual information.
+        url: "https://arxiv.org/abs/2306.00927"
+        image: /images/publication_3.png
+
+  # projects
+  projects:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "Django"
+          - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Feel free to reach out with any inquiries or to connect.
+    btnName: Contact Me
+    btnLink: mailto:jordynaojeda@gmail.com
+    formspree:
+      enable: true # `contact.email` value will be ignored
+      formId: xpwqjwqd # Take it from your form's endpoint # Form Created: https://formspree.io/f/xpwqjwqd
+      emailCaption: "Enter your email address"
+      messageCaption: "Enter your message here"
+      messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: False
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/jordynojeda
+      linkedin: https://www.linkedin.com/in/jordyn-ojeda-3834051a2/
+      # twitter: https://twitter.com
+      # instagram: https://instagram.com
+      # facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
