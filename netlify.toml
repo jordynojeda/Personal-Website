@@ -1,3 +1,13 @@
+[build.environment]
+HUGO_VERSION = "0.135.0"
+TZ = "America/Chicago"
+
+[build]
+publish = "public"
+command = "hugo"
+
+
+
 # [build]
 # publish = "exampleSite/public"
 # command = 'cd exampleSite && echo -e "\ngoogleAnalytics: $GOOGLE_ANALYTICS \ndisqusShortname: $DISQUS_SHORTNAME \n" >> config.yaml && hugo --gc --minify --themesDir ../..'
