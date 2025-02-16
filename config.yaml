@@ -14,8 +14,13 @@ outputs:
 
 Paginate: 3
 enableRobotsTXT: true
+# googleAnalytics: G-VS79SFLL6K
 # disqusShortname: your-disqus-shortname
-# googleAnalytics: G-MEASUREMENT_ID
+
+
+services:
+  googleAnalytics:
+    id: G-VS79SFLL6K
 
 markup:
   goldmark:
