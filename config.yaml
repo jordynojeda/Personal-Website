@@ -203,7 +203,7 @@ params:
 
           - Developed scalable connected vehicle analytics by automating real-time feature ingestion from Kafka streams into optimized Snowflake ML feature stores.
           - Built and deployed visual components in a Streamlit application to surface connected vehicle insights for service and engineering teams.
-          - Designed a machine learning model to detect ECU-tuned vehicles, projected to generate $300K–$500K in annual cost savings.
+          - Designed a machine learning model to detect anomalies in vehicles, projected to generate $300K–$500K in annual cost savings.
           - Partnered with data engineers, architects, and product teams to document pipelines, enhance data models, and establish best practices for connected vehicle solutions.
           
           #### AI/ML Solution Architect - Data & Analytics Team   
