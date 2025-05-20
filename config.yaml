@@ -142,9 +142,9 @@ params:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
-      enable: false
+      enable: true
       name: "Resume"
-      url: "#"
+      url: "/images/2025_RESUME.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -201,10 +201,10 @@ params:
           *Jan 2025 - Present · 2 mos*  
           *Medina, Minnesota, United States* 
 
-          - Designed and implemented features for connected vehicle analytics, processing real-time IoT event data, including VIN-level attributes (mileage, engine hours, software version, etc), engine speed, wheel speed, temperature-related metrics, and usage patterns.
-          - Developed and optimized Snowflake-based feature stores, structuring features into dimensional and fact tables to support machine learning and analytics.
-          - Built Snowflake tasks and automated feature ingestion from Kafka-streamed IoT event data, ensuring scalable and efficient data processing.
-          - Worked cross-functionally with data engineers, architects, and product teams to document data pipelines, refine data models, and drive best practices for connected vehicle data solutions.
+          - Developed scalable connected vehicle analytics by automating real-time feature ingestion from Kafka streams into optimized Snowflake ML feature stores.
+          - Built and deployed visual components in a Streamlit application to surface connected vehicle insights for service and engineering teams.
+          - Designed a machine learning model to detect ECU-tuned vehicles, projected to generate $300K–$500K in annual cost savings.
+          - Partnered with data engineers, architects, and product teams to document pipelines, enhance data models, and establish best practices for connected vehicle solutions.
           
           #### AI/ML Solution Architect - Data & Analytics Team   
           *Jul 2024 - Present · 7 mos*  
