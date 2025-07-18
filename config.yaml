@@ -198,13 +198,17 @@ params:
           <br>
 
           #### Data Scientist - Ride Command Data Team   
-          *Jan 2025 - Present · 2 mos*  
+          *Jan 2025 - Present · 7 mos*  
           *Medina, Minnesota, United States* 
 
-          - Developed scalable connected vehicle analytics by automating real-time feature ingestion from Kafka streams into optimized Snowflake ML feature stores.
-          - Built and deployed visual components in a Streamlit application to surface connected vehicle insights for service and engineering teams.
-          - Designed a machine learning model to detect anomalies in vehicles, projected to generate $300K–$500K in annual cost savings.
-          - Partnered with data engineers, architects, and product teams to document pipelines, enhance data models, and establish best practices for connected vehicle solutions.
+          - Designed and productionized a scalable ML feature pipeline by integrating legacy SEQ and Kafka streaming data, enhancing ingestion efficiency and enabling real-time connected vehicle analytics in Snowflake.
+          - Built general-purpose and advanced features (e.g., engine speed, wheel speed, battery trends, horsepower estimation) powering high-impact ML use cases such as software anomaly detection, battery health monitoring, and targeted marketing campaigns.
+          - Developed and deployed an end-to-end software anomaly detection ML model, delivering an estimated $350K in annual ROI and significantly reducing diagnostic time for service teams. Integrated the model into a stakeholder-facing Streamlit app with CRM access for seamless operational use.
+          - Investigated battery health by analyzing voltage patterns across vehicle lifecycles, identifying trends linked to failure, trickle charger behavior, and replacement events. Insights were shared with engineering leaders during a field site visit to inform future product strategy and increase customer battery health.
+          - Contributed to a targeted marketing use case by profiling customer-registered vehicles, segmenting by chassis type, mileage, and usage patterns to support personalized campaign development and customer behavior analysis.
+          - Created a vehicle analytics dashboard in Streamlit for VIN-level diagnostics, integrating real-time and historical telemetry, fault codes, and ML results, enabling data-driven insights for cross-functional stakeholders.
+          - Partnered with data engineers to implement upstream improvements (e.g., clustering & partitioning strategies), enhancing pipeline performance and reducing unnecessary data volume.
+          - Authored detailed documentation in Confluence, including architecture diagrams, feature development guides, onboarding resources, and a walkthrough video—ensuring long-term scalability and smooth knowledge transfer across the team.
           
           #### AI/ML Solution Architect - Data & Analytics Team   
           *Jul 2024 - Present · 7 mos*  
