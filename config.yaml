@@ -135,8 +135,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Jordyn Ojeda"
-    subtitle: "Data Scientist"
-    content: "I'm Jordyn Ojeda, a Data Scientist with a strong software engineering background and a deep passion for artificial intelligence, machine learning, data science, and innovative problem-solving. I'm always eager to learn and constantly expanding my knowledge to stay at the forefront of technology. Beyond my love for tech, I enjoy experimenting in the kitchen, staying active with weight lifting, and finding balance through golf and snowboarding."
+    subtitle: "AI/ML Engineer"
+    content: "I'm Jordyn Ojeda, a AI/ML Engineer with a strong software engineering background and a deep passion for artificial intelligence, machine learning, data science, and innovative problem-solving. I'm always eager to learn and constantly expanding my knowledge to stay at the forefront of technology. Beyond my love for tech, I enjoy experimenting in the kitchen, staying active with weight lifting, and finding balance through golf and snowboarding."
     image: /images/website-headshot.JPG
     bottomImage:
       enable: true
@@ -165,9 +165,9 @@ params:
     content: |-
       I hold both a Bachelor's and a Master's degree in Computer Science from the University of Minnesota, with a focus on AI/ML and Software Engineering during my graduate studies. As part of my master's program, I worked as a research assistant in a computational neuroscience lab, where I developed machine learning models that laid the groundwork for my thesis project. 
       
-      Currently, I’m a Data Scientist at Polaris, where I focus on feature engineering, developing ML models, and working with generative AI applications. In addition, I continue to collaborate with my research lab on an exciting project in partnership with MedARC.
+      Currently, I’m a AI/ML Engineer at Polaris, where I focus on feature engineering, developing ML models, and working with generative AI applications. In addition, I continue to collaborate with my research lab on an exciting project in partnership with MedARC.
       
-      What sets me apart is my strong communication, leadership, and mentorship skills. During my internship at Trane Technologies, I had the opportunity to lead and mentor software engineering interns, honing my ability to guide teams and drive results. I’m also an active member of Toastmasters at Polaris, where I continually refine my public speaking and communication skills, an essential part of effectively conveying complex ideas and leading teams.
+      What sets me apart is my strong communication, leadership, and mentorship skills. During my internship at Trane Technologies, I had the opportunity to lead and mentor software engineering interns, honing my ability to guide teams and drive results. I’m also an active member of Polaris Public Speaking club, where I continually refine my public speaking and communication skills, an essential part of effectively conveying complex ideas and leading teams.
     
     skills:
       enable: true
@@ -196,6 +196,23 @@ params:
           url: "https://example.com"
         content: |
           <br>
+
+          #### AI/ML Engineer - Data & Analytics Team  
+          *July 2025 - Present · 2 mos*  
+          *Medina, Minnesota, United States* 
+
+          - Standardizing LLMOps - Leading the development of a Polaris-wide LLMOps framework, covering operational, performance, safety/compliance, value, and cost metrics. Establishing processes for LLM selection/reselection and model lifecycle management to improve reliability, governance, and scalability of AI deployments.
+          - Enterprise-Scale RAG Solutions - Designing and delivering Retrieval-Augmented Generation (RAG) solutions for use cases spanning 5K–10K documents up to 100K+ documents. Building a production-grade ingestion pipeline in C# that:
+            - Chunks large documents with advanced algorithms.
+            - Injects metadata (page numbers, document hierarchies) for more accurate retrieval.
+            - Implements role-based access control per document type.
+            - Indexes content into Azure AI Search and powers a secure, user-facing C# application.
+
+          - Unstructured-to-Structured Data Pipelines - Turning complex, messy datasets into actionable structured JSON formats:
+            - Document Extraction: Using OCR to capture text, then LLM reasoning to complete and validate fields before generating structured outputs. Includes automated evaluation pipelines that score accuracy against ground truth.
+            - CAD Drawing Analysis: Combining OCR and custom computer vision models to detect and classify engineering diagram objects, map relationships, and link parts/notes into structured datasets for downstream processing.
+
+          - Text-to-SQL API Platform - Building a standardized, secure API framework for natural language database queries across Polaris. Deployed dual Azure App Services with FastAPI health-check endpoints, integrated with Azure API Management and Key Vault for secure key storage, and defined OpenAPI specs for /generate and /stream endpoints. Implemented centralized logging, organized vectorstore examples by schema, and explored user-based authorization.
 
           #### Data Scientist - Ride Command Data Team   
           *Jan 2025 - Present · 7 mos*  
