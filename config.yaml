@@ -144,7 +144,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/images/2025_RESUME.pdf"
+      url: "/images/2025 RESUME.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -198,24 +198,31 @@ params:
           <br>
 
           #### AI/ML Engineer - Data & Analytics Team  
-          *July 2025 - Present · 2 mos*  
+          *July 2025 - Present · 5 mos*  
           *Medina, Minnesota, United States* 
 
-          - Standardizing LLMOps - Leading the development of a Polaris-wide LLMOps framework, covering operational, performance, safety/compliance, value, and cost metrics. Establishing processes for LLM selection/reselection and model lifecycle management to improve reliability, governance, and scalability of AI deployments.
-          - Enterprise-Scale RAG Solutions - Designing and delivering Retrieval-Augmented Generation (RAG) solutions for use cases spanning 5K–10K documents up to 100K+ documents. Building a production-grade ingestion pipeline in C# that:
-            - Chunks large documents with advanced algorithms.
-            - Injects metadata (page numbers, document hierarchies) for more accurate retrieval.
-            - Implements role-based access control per document type.
-            - Indexes content into Azure AI Search and powers a secure, user-facing C# application.
+          Leading the design and implementation of enterprise-scale AI systems that combine retrieval-augmented generation (RAG), Text-To-SQL, LLMOps, and secure Azure cloud architecture to bring generative AI into production across Polaris.
+          
+          Standardizing LLMOps:
+            - Establishing a Polaris-wide LLMOps framework governing model selection, evaluation, and lifecycle management. Defining metrics for performance, safety, compliance, value, and cost to ensure reliability, governance, and scalability in AI deployments.
+          
+          Enterprise RAG Platform:
+            - Architecting a retrieval-augmented generation platform that ingests and reasons over billions of PDFs, HTML documents, and technical manuals. The system integrates large-scale ingestion, semantic retrieval, and summarization to deliver accurate, citation-backed, and explainable answers in real time.
+            - Built data ingestion pipelines that normalize heterogeneous content into a canonical schema with blue/green indexing for zero downtime.
+            - Developed a multi-source retrieval orchestrator blending keyword, vector, and semantic search, performing cross-source deduplication and weighted rank fusion.
+            - Created embedding and contextual retrieval pipelines using Azure AI Search and Azure OpenAI, enabling grounded, context-aware responses.
+            - Implemented Clean Architecture in C# (.NET 8) to separate ingestion, retrieval, orchestration, and presentation (API/chat) layers for scalability and maintainability.
+            - Integrated Semantic Kernel orchestration to support agent chat workflows and downstream interoperability.
+            - Partnered with infrastructure teams to deploy Managed Identity, ABAC-secured retrieval, and observability pipelines for reliability and compliance.
+            - Established QA and telemetry loops to monitor retrieval precision, summarization fidelity, and latency across production systems.
+          
+          Additional AI Initiatives:
+          - Unstructured-to-Structured Data Pipelines: Transforming CAD drawings and other complex datasets into structured JSON through OCR and computer vision–based object detection and relationship mapping.
+          - Text-to-SQL API Platform: Building a secure, standardized API for natural language queries using LangChain, Semantic Kernel, FastAPI, and Azure API Management, with Key Vault–based secrets, OpenAPI endpoints, and centralized logging for governance and traceability.
 
-          - Unstructured-to-Structured Data Pipelines - Turning complex, messy datasets into actionable structured JSON formats:
-            - Document Extraction: Using OCR to capture text, then LLM reasoning to complete and validate fields before generating structured outputs. Includes automated evaluation pipelines that score accuracy against ground truth.
-            - CAD Drawing Analysis: Combining OCR and custom computer vision models to detect and classify engineering diagram objects, map relationships, and link parts/notes into structured datasets for downstream processing.
-
-          - Text-to-SQL API Platform - Building a standardized, secure API framework for natural language database queries across Polaris. Deployed dual Azure App Services with FastAPI health-check endpoints, integrated with Azure API Management and Key Vault for secure key storage, and defined OpenAPI specs for /generate and /stream endpoints. Implemented centralized logging, organized vectorstore examples by schema, and explored user-based authorization.
 
           #### Data Scientist - Ride Command Data Team   
-          *Jan 2025 - Present · 7 mos*  
+          *Jan 2025 - July 2025 · 7 mos*  
           *Medina, Minnesota, United States* 
 
           - Designed and productionized a scalable ML feature pipeline by integrating legacy SEQ and Kafka streaming data, enhancing ingestion efficiency and enabling real-time connected vehicle analytics in Snowflake.
