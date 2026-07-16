@@ -144,7 +144,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/images/2026 RESUME.pdf"
+      url: "images/2026_RESUME___07_15_26.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -165,7 +165,7 @@ params:
     content: |-
       I hold both a Bachelor's and a Master's degree in Computer Science from the University of Minnesota, with a focus on AI/ML and Software Engineering during my graduate studies. As part of my master's program, I worked as a research assistant in a computational neuroscience lab, where I developed machine learning models that laid the groundwork for my thesis project. 
       
-      Currently, I’m a AI/ML Engineer at Polaris, where I focus on feature engineering, developing ML models, and working with generative AI applications. In addition, I continue to collaborate with my research lab on an exciting project in partnership with MedARC.
+      Currently, I'm an AI Engineer at Thomson Reuters, where I build production-scale AI systems for legal research. My work focuses on architecting and operationalizing retrieval-augmented generation (RAG) pipelines, agentic AI systems, and multi-turn conversational experiences that deliver accurate, citation-backed legal answers across multiple jurisdictions. I also develop evaluation frameworks and observability tooling to continuously improve the quality, reliability, and performance of customer-facing AI products.
       
       What sets me apart is my strong communication, leadership, and mentorship skills. During my internship at Trane Technologies, I had the opportunity to lead and mentor software engineering interns, honing my ability to guide teams and drive results. I’m also an active member of Polaris Public Speaking club, where I continually refine my public speaking and communication skills, an essential part of effectively conveying complex ideas and leading teams.
     
@@ -174,15 +174,52 @@ params:
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "Programming Languages: Python | C/C++ | SQL | C# | Javascript | Typescript | HTML | CSS "
-        - "Libraries: Pytorch | Numpy | Streamlit | OpenCV | LangChain | LangFlow"
+        - "Libraries: Pytorch | Numpy | Streamlit | OpenCV | LangGraph | Semantic Kernel | LangFuse | Otel | FastAPI"
         - "Development Environment: Linux | Eclipse | VS | VS Code"
-        - "Platforms: Github | Azure | Snowflake | Databricks | DataRobot | Azure AI Foundry"
+        - "Agent Development: Claude Code | Github Copilot | Codex"
+        - "Platforms: Github | Azure | AWS | Braintrust |Snowflake | Databricks | DataRobot | Azure AI Foundry"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
+
+      - job: "AI Engineer 11"
+        company: "Thomson Reuters"
+        companyUrl: "https://www.thomsonreuters.com/en"
+        date: ""
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          <br>
+
+          *Mar 2026 - Present*  
+          *Eagan, Minnesota, United States*
+
+          <br>
+
+          ###### Legal Deep Research 
+          
+          Building production-scale AI systems for legal research within widely used Thomson Reuters products. Core focus on operationalizing RAG pipelines and agentic AI at scale, delivering accurate, reasoning-driven answers to complex legal questions across numerous jurisdictions. 
+          
+          - Building and shipping RAG legal research agents that autonomously search legal databases, reasons through applicable law, and synthesize citation-backed answers to legal questions. 
+          - Engineering multi-turn conversational AI that supports follow-up questions with contextual continuity across research sessions. 
+          - Operationalizing RAG pipelines within enterprise-scale, production-grade legal tech products. 
+          - Delivering customer-facing research agents to production across the UK and Canadian markets. 
+          - Designing and maintaining an automated evaluation harness: information-retrieval metrics (precision@k, recall@k, MRR, F1, NDCG) computed at pre-query levels against gold-answers qrels, wired through Braintrust. 
+          
+          ###### Universal Research 
+          
+          Architecting a next-generation, global-first agentic research platform that unifies legal research across jurisdictions in a single system, driving it from proof of concept toward production. 
+          
+          - Designing a content-centric, configuration-driven agent architecture that extends to new regions and content types without rebuilding the underlying system. 
+          - Engineered end-to-end observability using OpenTelemetry and Braintrust tracing, enabling subject matter experts and developers to diagnose agent reasoning, execution paths, and failures across multi-agent workflows. 
+          - Applied advanced retrieval and evaluation techniques to improve citation accuracy, response completeness, and overall answer quality, helping the system meet production-grade reliability and performance standards
       
       - job: "Various Roles"
         company: "Polaris"
@@ -376,6 +413,10 @@ params:
         content: Image reconstruction from brain activity has advanced with large datasets and powerful generative models, yet most methods aim for single best-image estimates. We propose Second Sight, an iterative refinement approach that optimizes an image distribution for alignment with brain activity. By selectively refining both semantic and low-level features, our method produces reconstructions that rival state-of-the-art techniques. Interestingly, convergence times vary across visual cortex, with early areas preferring narrower distributions. This approach offers a novel way to explore how different brain regions represent visual information.
         url: "https://arxiv.org/abs/2306.00927"
         image: /images/publication_3.png
+      - title: "MIRAGE: Robust multi-modal architectures translate fMRI-to-image models from vision to mental imagery"
+        content: "Mental image reconstruction presents a greater challenge than reconstructing seen images, as models trained on visual stimuli often fail to generalize to internally generated representations. We introduce MIRAGE, a multimodal decoding framework that combines text and image features with diffusion models to achieve state-of-the-art performance on the NSD-Imagery benchmark. Our results demonstrate that existing vision datasets can effectively support mental image decoding when paired with the right architecture, advancing the development of practical brain-computer interfaces."
+        url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014263"
+        image: /images/publication_4.PNG
 
   # projects
   projects:
