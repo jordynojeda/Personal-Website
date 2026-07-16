@@ -238,13 +238,13 @@ params:
           *July 2025 - Present · 5 mos*  
           *Medina, Minnesota, United States* 
 
-          Leading the design and implementation of enterprise-scale AI systems that combine retrieval-augmented generation (RAG), Text-To-SQL, LLMOps, and secure Azure cloud architecture to bring generative AI into production across Polaris.
+          Lead the design and implementation of enterprise-scale AI systems that combine retrieval-augmented generation (RAG), Text-To-SQL, LLMOps, and secure Azure cloud architecture to bring generative AI into production across Polaris.
           
           Standardizing LLMOps:
-            - Establishing a Polaris-wide LLMOps framework governing model selection, evaluation, and lifecycle management. Defining metrics for performance, safety, compliance, value, and cost to ensure reliability, governance, and scalability in AI deployments.
+            - Established a Polaris-wide LLMOps framework governing model selection, evaluation, and lifecycle management. Defining metrics for performance, safety, compliance, value, and cost to ensure reliability, governance, and scalability in AI deployments.
           
           Enterprise RAG Platform:
-            - Architecting a retrieval-augmented generation platform that ingests and reasons over billions of PDFs, HTML documents, and technical manuals. The system integrates large-scale ingestion, semantic retrieval, and summarization to deliver accurate, citation-backed, and explainable answers in real time.
+            - Architected a retrieval-augmented generation platform that ingests and reasons over billions of PDFs, HTML documents, and technical manuals. The system integrates large-scale ingestion, semantic retrieval, and summarization to deliver accurate, citation-backed, and explainable answers in real time.
             - Built data ingestion pipelines that normalize heterogeneous content into a canonical schema with blue/green indexing for zero downtime.
             - Developed a multi-source retrieval orchestrator blending keyword, vector, and semantic search, performing cross-source deduplication and weighted rank fusion.
             - Created embedding and contextual retrieval pipelines using Azure AI Search and Azure OpenAI, enabling grounded, context-aware responses.
