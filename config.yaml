@@ -163,11 +163,11 @@ params:
     title: "About Me"
     image: "/images/website_photo.jpeg"
     content: |-
-      I hold both a Bachelor's and a Master's degree in Computer Science from the University of Minnesota, with a focus on AI/ML and Software Engineering during my graduate studies. As part of my master's program, I worked as a research assistant in a computational neuroscience lab, where I developed machine learning models that laid the groundwork for my thesis project. 
+      I hold both a Bachelor's in Computer Science and a Master's degree in Artifical Intelligence & Machine Learning from the University of Minnesota. As part of my master's program, I worked as a research assistant in a computational neuroscience lab, where I developed machine learning models that laid the groundwork for my thesis project. 
       
       Currently, I'm an AI Engineer at Thomson Reuters, where I build production-scale AI systems for legal research. My work focuses on architecting and operationalizing retrieval-augmented generation (RAG) pipelines, agentic AI systems, and multi-turn conversational experiences that deliver accurate, citation-backed legal answers across multiple jurisdictions. I also develop evaluation frameworks and observability tooling to continuously improve the quality, reliability, and performance of customer-facing AI products.
       
-      What sets me apart is my strong communication, leadership, and mentorship skills. During my internship at Trane Technologies, I had the opportunity to lead and mentor software engineering interns, honing my ability to guide teams and drive results. I’m also an active member of Polaris Public Speaking club, where I continually refine my public speaking and communication skills, an essential part of effectively conveying complex ideas and leading teams.
+      What sets me apart is my strong communication, leadership, and mentorship skills. During my internship at Trane Technologies, I had the opportunity to lead and mentor software engineering interns, strengthening my ability to guide teams and deliver results. I was also an active member of the Polaris Public Speaking Club, where I developed my presentation and communication skills. Today, I regularly present at Thomson Reuters, continuing to refine my ability to communicate complex technical concepts clearly and effectively—an essential skill for collaborating across teams and leading AI initiatives.
     
     skills:
       enable: true
